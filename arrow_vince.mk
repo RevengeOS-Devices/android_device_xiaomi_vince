@@ -25,13 +25,13 @@ $(call inherit-product-if-exists, vendor/xiaomi/MiuiCamera/vince.mk)
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
 # Inherit some common BeastROMs stuff.
-$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := rr_vince
+PRODUCT_NAME := arrow_vince
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
 PRODUCT_MANUFACTURER := Xiaomi
