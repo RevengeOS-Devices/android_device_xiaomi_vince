@@ -1,1 +1,1 @@
-add_lunch_combo arrow_vince-userdebug
+add_lunch_combo revengeos_vince-userdebug

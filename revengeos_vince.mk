@@ -24,16 +24,25 @@ $(call inherit-product-if-exists, vendor/xiaomi/MiuiCamera/vince.mk)
 # Inherit from vince device
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
-# Inherit some common BeastROMs stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common RevengeOS stuff.
+$(call inherit-product, vendor/revengeos/config/common.mk)
+$(call inherit-product, vendor/revengeos/config/gsm.mk)
+IS_PHONE := true
 
+#Official
+REVENGEOS_BUILD_TYPE := OFFICIAL
+
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+
+# BootAnim
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := arrow_vince
+PRODUCT_NAME := revengeos_vince
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi 5 Plus
+PRODUCT_MODEL := Redmi Note 5
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 BOARD_VENDOR := Xiaomi
