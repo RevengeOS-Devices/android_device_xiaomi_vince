@@ -11,7 +11,7 @@
     "remote": "github",
     "repository": "rajkale99/android_vendor_xiaomi_MiuiCamera",
     "target_path": "vendor/xiaomi/MiuiCamera",
-    "revision": "pie"
+    "revision": "mkp"
   }
 ]  
 
